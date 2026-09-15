@@ -95,7 +95,7 @@ import streamlit as st  # type: ignore
 # CẤU HÌNH TRANG & STYLE
 # ==========================================================================
 st.set_page_config(
-    page_title="Mini Tool Kiểm tra Lỗi Dữ Liệu KSK - Chuẩn Master", layout="wide"
+    page_title="Mini Tool Chinh Loi KSK Can cu Chuan Master Flow", layout="wide"
 )
 
 st.markdown(
@@ -625,7 +625,7 @@ if uploaded_file is None and "df_data" in st.session_state:
 
 if uploaded_file is not None:
     if "file_name" not in st.session_state or st.session_state.file_name != uploaded_file.name:
-        with st.spinner("Hệ thống đang quét lỗi tô màu và đồng bộ droplist chuẩn từ Master..."):
+        with st.spinner("Hệ thống đang quét ô báo lỗi và chuẩn hóa file theo Master Flow..."):
             result, err_msg = process_uploaded_error_file(uploaded_file)
             if err_msg:
                 st.error(err_msg)
