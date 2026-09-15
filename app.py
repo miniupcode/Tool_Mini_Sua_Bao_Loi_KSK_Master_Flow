@@ -791,7 +791,7 @@ if "df_data" in st.session_state:
             return f"🔴 {name} ({n_err} lỗi)"
 
         selected_idx = st.radio(
-            "Chọn nhân sự:",
+            "Chọn người khám:",
             options=list(range(len(df_data))),
             format_func=format_person,
             key="person_selector_radio",
@@ -808,11 +808,11 @@ if "df_data" in st.session_state:
         st.markdown(f"### 👤 Họ và tên: **{curr_person_name}**")
 
         if not fields_to_edit:
-            st.info("🟢 Nhân sự này không có ô nào bị báo lỗi/tô màu. Dữ liệu hoàn toàn hợp lệ.")
+            st.info("🟢 Người khám này không có ô nào bị báo lỗi/tô màu. Dữ liệu hoàn toàn hợp lệ.")
         elif is_completed:
-            st.info("🟢 Nhân sự này đã được đánh dấu **Đã sửa xong**.")
+            st.info("🟢 Người khám này đã được đánh dấu **Đã sửa xong**.")
         else:
-            st.warning(f"🔴 Nhân sự này đang còn **{len(fields_to_edit)}** trường cần xử lý lỗi.")
+            st.warning(f"🔴 Người khám này đang còn **{len(fields_to_edit)}** trường cần xử lý lỗi.")
 
         if selected_idx in st.session_state.get("age_mismatch_rows", set()):
             st.markdown(
@@ -947,7 +947,7 @@ if "df_data" in st.session_state:
         if st.button("💾 TẠO FILE CHUẨN MASTERFLOW (_DASUA.xlsm)", type="primary"):
             if len(st.session_state.err_reg) > 0:
                 st.error(
-                    f"🚫 KHÔNG THỂ XUẤT FILE! Vẫn còn {len(st.session_state.err_reg)} nhân sự chưa được xử lý hết lỗi."
+                    f"🚫 KHÔNG THỂ XUẤT FILE! Vẫn còn {len(st.session_state.err_reg)} người khám chưa được xử lý hết lỗi."
                 )
             else:
                 with st.spinner("Đang đóng gói dữ liệu và giữ nguyên cấu trúc VBA/Macro..."):
