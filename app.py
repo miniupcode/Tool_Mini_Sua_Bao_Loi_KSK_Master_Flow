@@ -95,7 +95,7 @@ import streamlit as st  # type: ignore
 # CẤU HÌNH TRANG & STYLE
 # ==========================================================================
 st.set_page_config(
-    page_title="Mini Tool Chinh Loi KSK Can cu Chuan Master Flow", layout="wide"
+    page_title="MiniTool_Chinh_Loi_Ksk_Chuan_MasterFlow", layout="wide"
 )
 
 st.markdown(
@@ -143,7 +143,7 @@ def reset_app_state():
 col_header_1, col_header_2 = st.columns([4, 1])
 with col_header_1:
     st.markdown(
-        "<div class='main-title'>🛠️ SỬA & KIỂM TRA QUY TẮC DỮ LIỆU KSK</div>",
+        "<div class='main-title'>🛠️ SỬA THEO QUY TẮC FILE IMPORT DỮ LIỆU KSK CỔNG MASTERFLOW DONGNAI</div>",
         unsafe_allow_html=True,
     )
 with col_header_2:
