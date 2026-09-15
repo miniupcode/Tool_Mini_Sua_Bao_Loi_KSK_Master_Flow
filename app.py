@@ -143,7 +143,7 @@ def reset_app_state():
 col_header_1, col_header_2 = st.columns([4, 1])
 with col_header_1:
     st.markdown(
-        "<div class='main-title'>🛠️ SỬA THEO QUY TẮC FILE IMPORT DỮ LIỆU KSK CỔNG MASTERFLOW DONGNAI</div>",
+        "<div class='main-title'>🛠️ SỬA THEO QUY TẮC FILE IMPORT DỮ LIỆU KSK CỔNG MASTERFLOW </div>",
         unsafe_allow_html=True,
     )
 with col_header_2:
