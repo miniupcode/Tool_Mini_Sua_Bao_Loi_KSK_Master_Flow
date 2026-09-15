@@ -95,7 +95,7 @@ import streamlit as st  # type: ignore
 # CẤU HÌNH TRANG & STYLE
 # ==========================================================================
 st.set_page_config(
-    page_title="Hệ thống Sửa Lỗi Dữ Liệu KSK - Chuẩn Master", layout="wide"
+    page_title="Mini Tool Kiểm tra Lỗi Dữ Liệu KSK - Chuẩn Master", layout="wide"
 )
 
 st.markdown(
@@ -143,7 +143,7 @@ def reset_app_state():
 col_header_1, col_header_2 = st.columns([4, 1])
 with col_header_1:
     st.markdown(
-        "<div class='main-title'>🛠️ CÔNG CỤ SỬA LỖI & KIỂM SOÁT QUY TẮC DỮ LIỆU KSK</div>",
+        "<div class='main-title'>🛠️ CÔNG CỤ SỬA & KIỂM TRA QUY TẮC DỮ LIỆU KSK</div>",
         unsafe_allow_html=True,
     )
 with col_header_2:
